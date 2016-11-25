@@ -14,8 +14,7 @@ The library is framework agnostic and abstracted. To make it work I will provide
 to make it work.
 
 
-# Domain models
+# Domain
+Package offers two services: one for sending emails and one for verifying the recieved code
 
-* **Email** model reflects the real email;
-* **Event** is a data packages which is emitted on successfull verification;
-
+It uses few Intefaces - they are to be implemented in integration package.
