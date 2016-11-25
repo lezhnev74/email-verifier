@@ -1,6 +1,7 @@
 #Overview
 
 The validation flow looks like this:
+
 1. User claims he owns the email;
 2. Library prepares an email to be sent to given email (message contains a link);
 3. Library sends an email;
