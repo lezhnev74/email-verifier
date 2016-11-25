@@ -1,0 +1,25 @@
+{
+  "name": "lezhnev74/email-verifier",
+  "description": "Package to make sure email is owned by the user",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitriy Lezhnev",
+      "email": "lezhnev.work@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "fzaninotto/faker": "^1.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lezhnev74\\EmailVerifier\\": "src/",
+      "Tests\\": "tests/"
+    }
+  }
+}
