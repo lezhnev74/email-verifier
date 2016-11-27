@@ -19,8 +19,8 @@ class FlowTest extends \PHPUnit_Framework_TestCase
         $this->expectExceptionCode(200);
 
         $email = new Email('some@example.org');
-        $service = new SendVerificationEmail($email, new Sender(), new Hasher());
-        $service->send();
+        $service = new SendVerificationEmail(new Sender(), new Hasher());
+        $service->send($email);
     }
 
     function test_verifier_works_as_expected()
@@ -32,7 +32,7 @@ class FlowTest extends \PHPUnit_Framework_TestCase
         $hahser = new Hasher();
         $code = $hahser->makeCodeForEmail($email);
 
-        $service = new VerifyEmailCode($code, $email, new Verifier(), new Dispatcher());
-        $service->verify();
+        $service = new VerifyEmailCode(new Verifier(), new Dispatcher());
+        $service->verify($code, $email);
     }
 }

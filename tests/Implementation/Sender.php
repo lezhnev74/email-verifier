@@ -2,6 +2,7 @@
 
 namespace Tests\Implementation;
 
+use Lezhnev74\EmailVerifierLaravel\Laravel\Mail\UserNeedsVerifyEmail;
 use Lezhnev74\EmailVerifier\Data\Email;
 use Lezhnev74\EmailVerifier\Service\EmailSender;
 
